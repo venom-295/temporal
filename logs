@@ -1,0 +1,1077 @@
+[
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositosExito",
+  "metodo": "Validaciones Alianza",
+  "endpoint": "/alianzasb2b/exito/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 08:35:02.869",
+    "datos": {
+      "Monto": 20000,
+      "Trx": 1
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 08:35:02.877",
+    "datos": {
+      "error": 0,
+      "descriptions": "La alianza puede procesar el recaudo."
+    }
+  },
+  "tiempo_respuesta_ms": 8
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositosExito",
+  "metodo": "Deposito Sisplay",
+  "endpoint": "/alianzasb2b/exito/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 08:35:02.878",
+    "datos": {
+      "configRq": {
+        "baseURL": "http://192.168.0.160:31198/v1/deposit",
+        "timeout": 3000,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8",
+          "Accept": "application/json",
+          "secretKey": "test"
+        }
+      },
+      "bodyRq": {
+        "docNumber": "1000000001",
+        "amount": 20000,
+        "timeStamp": "15/04/2025:08:35:02.370",
+        "externalUID": "60df66af-055e-42e5-ae9d-cc836e30549c",
+        "docType": 4,
+        "type": "alianza"
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 08:35:03.449",
+    "datos": {
+      "code": 200,
+      "descriptions": "OK",
+      "data": {
+        "realBalance": 639762,
+        "bonusBalance": 0,
+        "docNumber": "1000000001",
+        "accountCode": "85p3cfn829134g21l985",
+        "codigoTrx": 2788779,
+        "externalUID": "60df66af-055e-42e5-ae9d-cc836e30549c"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 571
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositosExito",
+  "metodo": "Deposito Alianza",
+  "endpoint": "/alianzasb2b/exito/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 08:35:03.449",
+    "datos": {
+      "deposit": {
+        "signature": "26f56a6db880c49810fbab57a1b3b17eba878b4bd0506af8cf6c4cdf017b5c10",
+        "uid_transaction": "60df66af-055e-42e5-ae9d-cc836e30549c",
+        "id_pointofsale": 35,
+        "id_cashier": "10258093",
+        "date_transaction": "15/04/2025:08:35:02.370",
+        "type_doc_customer": 4,
+        "cc_customer": "1000000001",
+        "amount": 20000,
+        "dane": "05266",
+        "id_b2b": 1
+      },
+      "codeTrx": 2788779,
+      "accountId": "85p3cfn829134g21l985"
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 08:35:03.541",
+    "datos": {
+      "error": 0,
+      "descriptions": "Deposito exitoso"
+    }
+  },
+  "tiempo_respuesta_ms": 92
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositosExito",
+  "metodo": "POST",
+  "endpoint": "/alianzasb2b/exito/depositos",
+  "request": {
+    "tipo": "Rq",
+    "timestamp": "2025-04-15 08:35:02.862",
+    "datos": {
+      "firma": "26f56a6db880c49810fbab57a1b3b17eba878b4bd0506af8cf6c4cdf017b5c10",
+      "body": {
+        "uid_transaccion": "60df66af-055e-42e5-ae9d-cc836e30549c",
+        "id_puntoventa": 35,
+        "id_cajero": "10258093",
+        "fecha_transaccion": "15/04/2025:08:35:02.370",
+        "tipo_doc_cliente": 2,
+        "cc_cliente": "1000000001",
+        "monto": 20000,
+        "dane": "05266",
+        "pin": 0
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs",
+    "timestamp": "2025-04-15 08:35:03.542",
+    "datos": {
+      "codigo": 200,
+      "message": {
+        "status_code": 0,
+        "status_desc": "Deposito exitoso",
+        "id_autorizacion": "2936"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 680
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "retirosExito",
+  "metodo": "Validaciones Alianza",
+  "endpoint": "/alianzasb2b/exito/retiros",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 08:35:09.301",
+    "datos": {
+      "Monto": 11000,
+      "Trx": 2
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 08:35:09.304",
+    "datos": {
+      "error": 0,
+      "descriptions": "La alianza puede procesar el retiro."
+    }
+  },
+  "tiempo_respuesta_ms": 3
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "retirosExito",
+  "metodo": "Retiro Alianza",
+  "endpoint": "/alianzasb2b/exito/retiros",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 08:35:09.304",
+    "datos": {
+      "signature": "149d7e62f32c890db6df0e91c7582d21d1e9a416a7981c4dfde3709fed841952",
+      "uid_transaction": "2b6effb6-8d77-4efc-846c-4fdfdc594b6c",
+      "id_pointofsale": 345,
+      "id_cashier": "124578963",
+      "date_transaction": "15/04/2025:08:35:09.019",
+      "type_doc_customer": 4,
+      "cc_customer": "1000000001",
+      "amount": 11000,
+      "dane": "05360",
+      "pin": 390730,
+      "id_b2b": 1
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 08:35:09.318",
+    "datos": {
+      "error": 117,
+      "descriptions": "Pin ya usado",
+      "ext_codigo_pin": null,
+      "nseguridad": null
+    }
+  },
+  "tiempo_respuesta_ms": 14
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "retirosExito",
+  "metodo": "POST",
+  "endpoint": "/alianzasb2b/exito/retiros",
+  "request": {
+    "tipo": "Rq",
+    "timestamp": "2025-04-15 08:35:09.300",
+    "datos": {
+      "firma": "149d7e62f32c890db6df0e91c7582d21d1e9a416a7981c4dfde3709fed841952",
+      "body": {
+        "uid_transaccion": "2b6effb6-8d77-4efc-846c-4fdfdc594b6c",
+        "id_puntoventa": 345,
+        "id_cajero": "124578963",
+        "fecha_transaccion": "15/04/2025:08:35:09.019",
+        "tipo_doc_cliente": 2,
+        "cc_cliente": "1000000001",
+        "monto": 11000,
+        "dane": "05360",
+        "pin": 390730
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs",
+    "timestamp": "2025-04-15 08:35:09.318",
+    "datos": {
+      "code": 400,
+      "message": {
+        "error": 117,
+        "descriptions": "Pin ya usado"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 18
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositosExito",
+  "metodo": "Validaciones Alianza",
+  "endpoint": "/alianzasb2b/exito/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 15:15:57.737",
+    "datos": {
+      "Monto": 69000,
+      "Trx": 1
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 15:15:57.860",
+    "datos": {
+      "error": 0,
+      "descriptions": "La alianza puede procesar el recaudo."
+    }
+  },
+  "tiempo_respuesta_ms": 123
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositosExito",
+  "metodo": "Deposito Sisplay",
+  "endpoint": "/alianzasb2b/exito/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 15:15:57.861",
+    "datos": {
+      "configRq": {
+        "baseURL": "http://192.168.0.160:31198/v1/deposit",
+        "timeout": 3000,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8",
+          "Accept": "application/json",
+          "secretKey": "test"
+        }
+      },
+      "bodyRq": {
+        "docNumber": "71724507",
+        "amount": 69000,
+        "timeStamp": "15/04/2025:15:15:57.279",
+        "externalUID": "d2c88f59-8808-4164-8144-7f3cd10c2147",
+        "docType": 3,
+        "type": "alianza"
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 15:15:58.074",
+    "datos": {
+      "code": 200,
+      "descriptions": "OK",
+      "data": {
+        "realBalance": 5495188.8067,
+        "bonusBalance": 0,
+        "docNumber": "71724507",
+        "accountCode": "64i5ybw734234n98y823",
+        "codigoTrx": 2788783,
+        "externalUID": "d2c88f59-8808-4164-8144-7f3cd10c2147"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 213
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositosExito",
+  "metodo": "Deposito Alianza",
+  "endpoint": "/alianzasb2b/exito/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 15:15:58.074",
+    "datos": {
+      "deposit": {
+        "signature": "1e8c883e0450eb2119cf355f20d686af81c7fa61d85adc065487492acded6f65",
+        "uid_transaction": "d2c88f59-8808-4164-8144-7f3cd10c2147",
+        "id_pointofsale": 13,
+        "id_cashier": "11111",
+        "date_transaction": "15/04/2025:15:15:57.279",
+        "type_doc_customer": 3,
+        "cc_customer": "71724507",
+        "amount": 69000,
+        "dane": "54001",
+        "id_b2b": 1
+      },
+      "codeTrx": 2788783,
+      "accountId": "64i5ybw734234n98y823"
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 15:15:58.147",
+    "datos": {
+      "error": 0,
+      "descriptions": "Deposito exitoso"
+    }
+  },
+  "tiempo_respuesta_ms": 73
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositosExito",
+  "metodo": "POST",
+  "endpoint": "/alianzasb2b/exito/depositos",
+  "request": {
+    "tipo": "Rq",
+    "timestamp": "2025-04-15 15:15:57.736",
+    "datos": {
+      "firma": "1e8c883e0450eb2119cf355f20d686af81c7fa61d85adc065487492acded6f65",
+      "body": {
+        "uid_transaccion": "d2c88f59-8808-4164-8144-7f3cd10c2147",
+        "id_puntoventa": 13,
+        "id_cajero": "11111",
+        "fecha_transaccion": "15/04/2025:15:15:57.279",
+        "tipo_doc_cliente": 1,
+        "cc_cliente": "71724507",
+        "monto": 69000,
+        "dane": "54001",
+        "pin": 0
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs",
+    "timestamp": "2025-04-15 15:15:58.148",
+    "datos": {
+      "codigo": 200,
+      "message": {
+        "status_code": 0,
+        "status_desc": "Deposito exitoso",
+        "id_autorizacion": "2937"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 412
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "Validaciones Alianza",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 15:58:55.208",
+    "datos": {
+      "Id_B2B": 13,
+      "Monto": 0,
+      "Trx": 0
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 15:58:55.214",
+    "datos": {
+      "error": 0,
+      "descriptions": "La alianza puede procesar la consulta."
+    }
+  },
+  "tiempo_respuesta_ms": 6
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "Consulta Sisplay",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 15:58:55.214",
+    "datos": {
+      "baseURL": "http://192.168.0.160:31235/v1/player_info?docNumber=555555500&docType=3&type=alianza",
+      "timeout": "10000",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Accept": "application/json",
+        "secretKey": "test"
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 15:58:55.227",
+    "datos": {
+      "code": 422,
+      "descriptions": "Unprocessable Entity",
+      "data": {
+        "errorCode": "InvalidUser",
+        "errorDescription": "El numero de documento no se encuentra registrado en el sistema",
+        "coderror": 107,
+        "descripcionerror": "Jugador no registrado"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 13
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "POST",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq",
+    "timestamp": "2025-04-15 15:58:55.207",
+    "datos": {
+      "firma": "bfaa6df99d6c7eea5b1a731b403debb9eb48e37743dae0376213899d89a3b69b",
+      "body": {
+        "id_b2b": 13,
+        "uid_transaccion": "DEV17447507350717533",
+        "id_terminal": 3207277580,
+        "fecha_transaccion": "15/04/2025:15:58:55.072",
+        "tipo_doc_cliente": 1,
+        "cc_cliente": 555555500
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs",
+    "timestamp": "2025-04-15 15:58:55.227",
+    "datos": {
+      "code": 422,
+      "message": {
+        "error": 107,
+        "descriptions": "Jugador no registrado"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 20
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "Validaciones Alianza",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 15:59:12.570",
+    "datos": {
+      "Id_B2B": 13,
+      "Monto": 0,
+      "Trx": 0
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 15:59:12.573",
+    "datos": {
+      "error": 0,
+      "descriptions": "La alianza puede procesar la consulta."
+    }
+  },
+  "tiempo_respuesta_ms": 3
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "Consulta Sisplay",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 15:59:12.574",
+    "datos": {
+      "baseURL": "http://192.168.0.160:31235/v1/player_info?docNumber=5555555002&docType=3&type=alianza",
+      "timeout": "10000",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Accept": "application/json",
+        "secretKey": "test"
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 15:59:12.584",
+    "datos": {
+      "code": 200,
+      "descriptions": "OK",
+      "data": {
+        "countryIsoCode": "CO",
+        "currency": 7,
+        "isAbleToDeposit": true,
+        "isAbleToWithdraw": true,
+        "isAbleToBet": true,
+        "mobile": 3172228686,
+        "email": "mateo.castro@codesa.com.co",
+        "balance": {
+          "realBalance": 550474376,
+          "bonusBalance": 0,
+          "totalBalance": 550474376
+        }
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 10
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "POST",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq",
+    "timestamp": "2025-04-15 15:59:12.569",
+    "datos": {
+      "firma": "1b9e5ebaf976577430da6822ece0a2eac3f933612be8363d49ace16b5563a5bc",
+      "body": {
+        "id_b2b": 13,
+        "uid_transaccion": "DEV17447507525217534",
+        "id_terminal": 3207277580,
+        "fecha_transaccion": "15/04/2025:15:59:12.523",
+        "tipo_doc_cliente": 1,
+        "cc_cliente": 5555555002
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs",
+    "timestamp": "2025-04-15 15:59:12.585",
+    "datos": {
+      "codigo": 200,
+      "message": {
+        "status_code": "0",
+        "status_desc": "Consulta exitosa",
+        "tipo_doc_cliente": 1,
+        "cc_cliente": 5555555002,
+        "activo_depositos": true,
+        "activo_retiros": true
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 16
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositos",
+  "metodo": "Validaciones Alianza",
+  "endpoint": "/alianzasb2b/v1/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 15:59:22.028",
+    "datos": {
+      "Id_B2B": 13,
+      "Monto": 5000,
+      "Trx": 1
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 15:59:22.030",
+    "datos": {
+      "error": 0,
+      "descriptions": "La alianza puede procesar el recaudo."
+    }
+  },
+  "tiempo_respuesta_ms": 2
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositos",
+  "metodo": "Deposito Sisplay",
+  "endpoint": "/alianzasb2b/v1/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 15:59:22.031",
+    "datos": {
+      "configRq": {
+        "baseURL": "http://192.168.0.160:31198/v1/deposit",
+        "timeout": 3000,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8",
+          "Accept": "application/json",
+          "secretKey": "test"
+        }
+      },
+      "bodyRq": {
+        "docNumber": 5555555002,
+        "amount": 5000,
+        "timeStamp": "15/04/2025:15:59:21.986",
+        "externalUID": "DEV17447507600327535",
+        "docType": 3,
+        "type": "alianza"
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 15:59:22.225",
+    "datos": {
+      "code": 200,
+      "descriptions": "OK",
+      "data": {
+        "realBalance": 573753126.2868,
+        "bonusBalance": 0,
+        "docNumber": "5555555002",
+        "accountCode": "82G3EQK199198W44X654",
+        "codigoTrx": 2788795,
+        "externalUID": "DEV17447507600327535"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 194
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositos",
+  "metodo": "Deposito Alianza",
+  "endpoint": "/alianzasb2b/v1/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 15:59:22.225",
+    "datos": {
+      "deposit": {
+        "id_b2b": 13,
+        "uid_transaction": "DEV17447507600327535",
+        "id_terminal": 3207277580,
+        "date_transaction": "15/04/2025:15:59:21.986",
+        "type_doc_customer": 3,
+        "cc_customer": 5555555002,
+        "amount": 5000,
+        "dane": 85001,
+        "signature": "2f0e29c2c27fb1a123efc739bf2c12045aabdae9621c469dec95f9ba1a3d4c0c"
+      },
+      "codeTrx": 2788795,
+      "accountId": "82G3EQK199198W44X654"
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 15:59:22.932",
+    "datos": {
+      "error": 0,
+      "descriptions": "Deposito exitoso"
+    }
+  },
+  "tiempo_respuesta_ms": 707
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositos",
+  "metodo": "POST",
+  "endpoint": "/alianzasb2b/v1/depositos",
+  "request": {
+    "tipo": "Rq",
+    "timestamp": "2025-04-15 15:59:22.027",
+    "datos": {
+      "firma": "2f0e29c2c27fb1a123efc739bf2c12045aabdae9621c469dec95f9ba1a3d4c0c",
+      "body": {
+        "id_b2b": 13,
+        "uid_transaccion": "DEV17447507600327535",
+        "id_terminal": 3207277580,
+        "fecha_transaccion": "15/04/2025:15:59:21.986",
+        "tipo_doc_cliente": 1,
+        "cc_cliente": 5555555002,
+        "monto": 5000,
+        "dane": 85001,
+        "codigo_postal": 85001
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs",
+    "timestamp": "2025-04-15 15:59:22.932",
+    "datos": {
+      "codigo": 200,
+      "message": {
+        "status_code": 0,
+        "status_desc": "Deposito exitoso",
+        "nseguridad": "93e26fdfab3488ff622b"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 905
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "Validaciones Alianza",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 16:10:11.697",
+    "datos": {
+      "Id_B2B": 13,
+      "Monto": 0,
+      "Trx": 0
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 16:10:11.702",
+    "datos": {
+      "error": 0,
+      "descriptions": "La alianza puede procesar la consulta."
+    }
+  },
+  "tiempo_respuesta_ms": 5
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "Consulta Sisplay",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 16:10:11.702",
+    "datos": {
+      "baseURL": "http://192.168.0.160:31235/v1/player_info?docNumber=555555500&docType=3&type=alianza",
+      "timeout": "10000",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Accept": "application/json",
+        "secretKey": "test"
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 16:10:11.712",
+    "datos": {
+      "code": 422,
+      "descriptions": "Unprocessable Entity",
+      "data": {
+        "errorCode": "InvalidUser",
+        "errorDescription": "El numero de documento no se encuentra registrado en el sistema",
+        "coderror": 107,
+        "descripcionerror": "Jugador no registrado"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 10
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "POST",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq",
+    "timestamp": "2025-04-15 16:10:11.696",
+    "datos": {
+      "firma": "2ea09f38ba0ee23a496669c2013376e098e9b575f57d32293101499f27b29075",
+      "body": {
+        "id_b2b": 13,
+        "uid_transaccion": "DEV17447514116287536",
+        "id_terminal": 3207277580,
+        "fecha_transaccion": "15/04/2025:16:10:11.631",
+        "tipo_doc_cliente": 1,
+        "cc_cliente": 555555500
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs",
+    "timestamp": "2025-04-15 16:10:11.712",
+    "datos": {
+      "code": 422,
+      "message": {
+        "error": 107,
+        "descriptions": "Jugador no registrado"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 16
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "Validaciones Alianza",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 16:12:02.836",
+    "datos": {
+      "Id_B2B": 13,
+      "Monto": 0,
+      "Trx": 0
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 16:12:02.840",
+    "datos": {
+      "error": 0,
+      "descriptions": "La alianza puede procesar la consulta."
+    }
+  },
+  "tiempo_respuesta_ms": 4
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "Consulta Sisplay",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 16:12:02.840",
+    "datos": {
+      "baseURL": "http://192.168.0.160:31235/v1/player_info?docNumber=5555555002&docType=3&type=alianza",
+      "timeout": "10000",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Accept": "application/json",
+        "secretKey": "test"
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 16:12:02.850",
+    "datos": {
+      "code": 200,
+      "descriptions": "OK",
+      "data": {
+        "countryIsoCode": "CO",
+        "currency": 7,
+        "isAbleToDeposit": true,
+        "isAbleToWithdraw": true,
+        "isAbleToBet": true,
+        "mobile": 3172228686,
+        "email": "mateo.castro@codesa.com.co",
+        "balance": {
+          "realBalance": 550474376,
+          "bonusBalance": 0,
+          "totalBalance": 550474376
+        }
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 10
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "consutaPlayer",
+  "metodo": "POST",
+  "endpoint": "/alianzasb2b/v1/consultaplayer",
+  "request": {
+    "tipo": "Rq",
+    "timestamp": "2025-04-15 16:12:02.832",
+    "datos": {
+      "firma": "65063a5b06550fb06ccb4d963917fe75f0a9eb5c58edf7d12f3652f3a50831d1",
+      "body": {
+        "id_b2b": 13,
+        "uid_transaccion": "DEV17447515227467537",
+        "id_terminal": 3207277580,
+        "fecha_transaccion": "15/04/2025:16:12:02.748",
+        "tipo_doc_cliente": 1,
+        "cc_cliente": 5555555002
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs",
+    "timestamp": "2025-04-15 16:12:02.851",
+    "datos": {
+      "codigo": 200,
+      "message": {
+        "status_code": "0",
+        "status_desc": "Consulta exitosa",
+        "tipo_doc_cliente": 1,
+        "cc_cliente": 5555555002,
+        "activo_depositos": true,
+        "activo_retiros": true
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 19
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositos",
+  "metodo": "Validaciones Alianza",
+  "endpoint": "/alianzasb2b/v1/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 16:12:14.613",
+    "datos": {
+      "Id_B2B": 13,
+      "Monto": 5000,
+      "Trx": 1
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 16:12:14.616",
+    "datos": {
+      "error": 0,
+      "descriptions": "La alianza puede procesar el recaudo."
+    }
+  },
+  "tiempo_respuesta_ms": 3
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositos",
+  "metodo": "Deposito Sisplay",
+  "endpoint": "/alianzasb2b/v1/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 16:12:14.616",
+    "datos": {
+      "configRq": {
+        "baseURL": "http://192.168.0.160:31198/v1/deposit",
+        "timeout": 3000,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8",
+          "Accept": "application/json",
+          "secretKey": "test"
+        }
+      },
+      "bodyRq": {
+        "docNumber": 5555555002,
+        "amount": 5000,
+        "timeStamp": "15/04/2025:16:12:14.573",
+        "externalUID": "DEV17447515339317538",
+        "docType": 3,
+        "type": "alianza"
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 16:12:15.090",
+    "datos": {
+      "code": 200,
+      "descriptions": "OK",
+      "data": {
+        "realBalance": 573757327.2868,
+        "bonusBalance": 0,
+        "docNumber": "5555555002",
+        "accountCode": "82G3EQK199198W44X654",
+        "codigoTrx": 2788801,
+        "externalUID": "DEV17447515339317538"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 474
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositos",
+  "metodo": "Deposito Alianza",
+  "endpoint": "/alianzasb2b/v1/depositos",
+  "request": {
+    "tipo": "Rq1",
+    "timestamp": "2025-04-15 16:12:15.090",
+    "datos": {
+      "deposit": {
+        "id_b2b": 13,
+        "uid_transaction": "DEV17447515339317538",
+        "id_terminal": 3207277580,
+        "date_transaction": "15/04/2025:16:12:14.573",
+        "type_doc_customer": 3,
+        "cc_customer": 5555555002,
+        "amount": 5000,
+        "dane": 85001,
+        "signature": "f3012eca8f48fc8afae771a4f5b96ad675f738ee8871ed4ec9f4ee00cdcc51bd"
+      },
+      "codeTrx": 2788801,
+      "accountId": "82G3EQK199198W44X654"
+    }
+  },
+  "response": {
+    "tipo": "Rs1",
+    "timestamp": "2025-04-15 16:12:15.143",
+    "datos": {
+      "error": 0,
+      "descriptions": "Deposito exitoso"
+    }
+  },
+  "tiempo_respuesta_ms": 53
+}
+,
+{
+  "sistema": "ALIANZASB2B",
+  "operacion": "depositos",
+  "metodo": "POST",
+  "endpoint": "/alianzasb2b/v1/depositos",
+  "request": {
+    "tipo": "Rq",
+    "timestamp": "2025-04-15 16:12:14.612",
+    "datos": {
+      "firma": "f3012eca8f48fc8afae771a4f5b96ad675f738ee8871ed4ec9f4ee00cdcc51bd",
+      "body": {
+        "id_b2b": 13,
+        "uid_transaccion": "DEV17447515339317538",
+        "id_terminal": 3207277580,
+        "fecha_transaccion": "15/04/2025:16:12:14.573",
+        "tipo_doc_cliente": 1,
+        "cc_cliente": 5555555002,
+        "monto": 5000,
+        "dane": 85001,
+        "codigo_postal": 85001
+      }
+    }
+  },
+  "response": {
+    "tipo": "Rs",
+    "timestamp": "2025-04-15 16:12:15.144",
+    "datos": {
+      "codigo": 200,
+      "message": {
+        "status_code": 0,
+        "status_desc": "Deposito exitoso",
+        "nseguridad": "d2e582ba1b87fd0418ff"
+      }
+    }
+  },
+  "tiempo_respuesta_ms": 532
+}
+]
